@@ -127,7 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BaseProgConvert.cpp" />
+    <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ToBinary.cpp" />
+    <ClCompile Include="ToHex.cpp" />
+    <ClCompile Include="ToOctal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Converter.h" />
+    <ClInclude Include="ToBinary.h" />
+    <ClInclude Include="ToHex.h" />
+    <ClInclude Include="ToOctal.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
