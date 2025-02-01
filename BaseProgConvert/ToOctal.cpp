@@ -1,5 +1,5 @@
 #include "ToOctal.h"
 
 ToOctal::ToOctal() :
-    Converter(2) {
+    Converter(8) {
 }

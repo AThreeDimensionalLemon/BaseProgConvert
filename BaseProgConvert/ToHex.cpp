@@ -1,5 +1,5 @@
 #include "ToHex.h"
 
 ToHex::ToHex() :
-    Converter(2) {
+    Converter(16) {
 }

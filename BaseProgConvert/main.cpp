@@ -9,8 +9,8 @@ int main() {
 
     //Object construction
     ToBinary binary;
-    //ToOctal octal;
-    //ToHex hexa;
+    ToOctal octal;
+    ToHex hexa;
 
     //Binary conversion
     cout << "Testing binary conversion\n----------------\n";
@@ -19,14 +19,14 @@ int main() {
     cout << "45 -> " << binary.convert(45) << endl << endl;
 
     //Octal convertion
-    //cout << "Testing octal conversion\n----------------\n";
-    //cout << "3 -> " << octal.convert(3) << endl;
-    //cout << "69 -> " << octal.convert(69) << endl;
-    //cout << "24 -> " << octal.convert(24) << endl << endl;
+    cout << "Testing octal conversion\n----------------\n";
+    cout << "3 -> " << octal.convert(3) << endl;
+    cout << "69 -> " << octal.convert(69) << endl;
+    cout << "24 -> " << octal.convert(24) << endl << endl;
 
     //Hex convertion
-    //cout << "Testing hex conversion\n----------------\n";
-    //cout << "91 -> " << hexa.convert(91) << endl;
-    //cout << "56 -> " << hexa.convert(56) << endl;
-    //cout << "38 -> " << hexa.convert(38) << endl;
+    cout << "Testing hex conversion\n----------------\n";
+    cout << "91 -> " << hexa.convert(91) << endl;
+    cout << "56 -> " << hexa.convert(56) << endl;
+    cout << "38 -> " << hexa.convert(38) << endl;
 }
