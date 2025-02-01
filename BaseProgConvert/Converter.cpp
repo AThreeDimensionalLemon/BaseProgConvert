@@ -1,11 +1,10 @@
 #include "Converter.h"
-#include <queue>
 #include <cmath>
 using namespace std;
 
-int Converter::convert(int input) {
-    queue<int> resultDigits;
-    int result = 0;
+string Converter::convert(int input) {
+    string result;
+    stack<int> resultDigits;
 
     //Convert number
     while (input > 0) {
@@ -14,11 +13,9 @@ int Converter::convert(int input) {
     }
 
     //Rebuild number
-    int place = 1;
     while (resultDigits.size() > 0) {
-        result += resultDigits.front() * place;
+        result += to_string(resultDigits.top());
         resultDigits.pop();
-        place *= 10;
     }
 
     return result;

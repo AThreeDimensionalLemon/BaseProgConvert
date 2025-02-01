@@ -1,10 +1,13 @@
 #pragma once
+#include <string>
+#include <stack>
+using namespace std;
 
 class Converter {
-private:
+protected:
     int resultBase;
 
 public:
-    int convert(int input);
+    string convert(int input);
     Converter(int inResultBase);
 };
